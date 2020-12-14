@@ -27,6 +27,8 @@ public class SimpleJobConfiguration {
                 .build();
     }
 
+
+
     @Bean
     @JobScope
     public Step simpleStep1(@Value("#{jobParameters[requestDate]}") String requestDate) {
